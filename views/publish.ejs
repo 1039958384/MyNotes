@@ -1,0 +1,40 @@
+<%- include header %>
+
+    <div class="panel panel-info">
+	
+	    <div class="panel-heading">
+			<h3 class="panel-title">发布手记</h3>
+		</div>
+		
+		<div class="panel-body">
+		    <div id="publish-form">
+			    <div class="form-group">
+					<span class="required">*</span>
+					<input type="text" name="heading" placeholder="请在此输入标题,最多35个中文长度">
+				    <p class="tip">标题不能少于10个字！</p>
+				</div>
+				 <div class="form-group">
+				    <span class="required">*</span>
+					<textarea placeholder="请在此输入内容,内容不得少于200字"></textarea>
+					<p class="tip">内容不能少于200个字！</p>
+				</div>
+				 <div class="form-group">
+                    <span class="required">*</span>
+				    <span>选择手记合适的标签,最多可选3个</span>
+					<div class="tag">
+					    <span class="btn btn-default">HTML/CSS</span> <span class="btn btn-default">CSS3</span>
+						<span class="btn btn-default">JavaScript</span> <span class="btn btn-default">HTML5</span>
+					    <span class="btn btn-default">Java</span> <span class="btn btn-default">前端工具</span>
+						<span class="btn btn-default">AngularJS</span> <span class="btn btn-default">数据结构</span>
+					</div>
+					<p class="tip">手记至少选择1个分类</p>
+				</div>
+				 <div class="form-group">
+				    <button type="button" class="btn btn-info btn-large">发布</button>
+				</div>
+			</div>
+	   </div>
+	   
+	</div>
+
+<%- include footer %> 

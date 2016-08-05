@@ -1,0 +1,42 @@
+<%- include header %>
+
+<div class="article-page">
+
+    <div class="row">
+	
+		<div class="col-md-3">
+			<div class="user-info"> 
+				<h1>
+					<span class="glyphicon glyphicon-leaf"></span>
+					<small>个人中心</small>
+				</h1>
+				
+				<% if(user){ %>
+					<p><span class="glyphicon glyphicon-user"></span> <%= user %></p>
+					<p><span class="glyphicon glyphicon-heart"></span> 前端开发工程师</p>
+					<p><span class="glyphicon glyphicon-book"></span> 发布手记：<%= totalPosts %>篇</p>
+				<% } %>
+			</div>
+		</div>
+		
+
+		<div class="col-md-9">
+			<div class="post-list">
+			
+				<ul class="header clearfix">
+					<li><a href="/publish"><span class="glyphicon glyphicon-pencil"> 创建新手记</a></li>
+					<li><a href="/article/page/1"><span class="glyphicon glyphicon-list"> 手记目录</a></li>
+				</ul>
+				
+				<ul class="articles thumbnails">
+					<%- include posts %>
+				</ul>
+				
+			</div>
+		</div>
+	
+	
+    </div>	
+	
+</div>
+<%- include footer %> 

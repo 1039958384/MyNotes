@@ -1,0 +1,23 @@
+<%- include header %>
+
+
+ 
+    <div class="hero-unit">
+		<h1>欢迎来到 我的手记</h1>
+		<p> 我的手记 是一个基于 Node.js 的私人手记管理系统。</p>
+		<p>
+		
+		  <% if(!user){ %>
+			  <a class="btn btn-primary btn-large" href="/login">登录</a>
+			  <a class="btn btn-large" href="/reg">立即注册</a>
+		  <% }else{ %>
+		      <a class="btn btn-primary btn-large" href="/publish">创建手记</a>
+			  <a class="btn btn-default btn-large" href="/article">我的手记</a>
+		  <% } %>
+		</p>
+	</div>
+  
+  
+<%- include footer %>  
+  
+

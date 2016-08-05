@@ -1,0 +1,45 @@
+
+<% posts.forEach(function(item,index) { %>
+	<li class="span4 article">
+		<h3><a href="/detail/<%= page %>/<%= index %>"><%= item.post.heading %></a></h3>
+		<p><%= (item.post.content.substring(0,200).replace(/\<br\/>/g, '\n')+"...") %></p>
+		
+		<!--<span><%= item.post.tags %></span>-->
+		<div class="clearfix">
+		
+			<span class="user left">
+			    <a href="/article/page/1"><%= item.user %> <span class="glyphicon glyphicon-user"></span></a>
+			</span>
+			
+			<span class="delete right">
+			    <a data-href="/delete/<%= page %>/<%= index %>" data-time="<%= item.post.date %>"> 删除 <span class="glyphicon glyphicon-trash"></span></a>
+			</span>
+			<span class="edit right">
+			    <a href="/edit/<%= page %>/<%= index %>"> 编辑 <span class="glyphicon glyphicon-edit"></span></a>
+			</span>
+			<span class="date right">
+			    <%= item.post.date %>
+			</span>
+			
+		</div>
+    </li>
+<% }) %>
+
+
+<ul class="pagination">
+	<li>
+		<a href="#" aria-label="Previous">
+			<span aria-hidden="true">&laquo;</span>
+		</a>
+	</li>
+	
+	<% for(var i=0; i <= parseInt(totalPosts/5); i++) {%>
+		<li><a href="/article/page/<%= i+1 %>"><%= i+1 %></a></li>
+	<% } %>
+
+	<li>
+		<a href="#" aria-label="Next">
+			<span aria-hidden="true">&raquo;</span>
+		</a>
+	</li>
+</ul>

@@ -1,0 +1,193 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+
+#publish-form span.required{
+	color:red;
+	font-size:20px;
+}
+#publish-form input[name="heading"]{
+	width:85%;
+	height:50px;
+	text-align:left;
+	font-size:16px;
+	color:#666;
+	padding:10px;
+	font-family: "Microsoft YaHei";
+}
+#publish-form textarea{
+	width:85%;
+	height:400px;
+	color:#333;
+	padding:10px;
+	font-size:14px;
+}
+#publish-form .tip{
+	margin:5px 12px;
+	font-size:12px;
+	color:red;
+	display:none;
+}
+#publish-form button,#publish-form .tag{
+	margin:10px 12px;
+}
+#publish-form .tag .choosed,#publish-form .tag .date{
+	display:none;
+}
+#publish-form .tag span{
+	background:#fff;
+	color:#333;
+	border:1px solid #ccc;
+}
+
+
+
+.user-info{
+	text-align:left;
+	width:95%;
+	height:250px;
+	border:1px solid #ccc;
+	padding:20px;
+	margin-top:60px;
+	color:#096;
+}
+.user-info p{
+	margin:20px 5px;
+}
+
+
+
+.article-page,.detail-page{
+	padding:40px 10px; 
+	width:85%;
+	min-width:950px;
+	margin-left:5%;
+}
+
+.article-page .post-list,.detail-page .detail {
+	max-width:880px;
+	font-family:"Microsoft YaHei";
+}
+.article-page .header{
+	border-bottom:1px solid #999;
+	padding:20px;
+	list-style:none;
+}
+.article-page .header li{
+	margin-right:40px;
+	float:right;	
+}
+.article-page .header li a{
+	color:#903;
+	text-decoration:none;
+	font-size:14px;
+}
+.article-page .header li a:hover{
+	color:red;
+}
+.article-page .articles li.article{
+	list-style:none;
+	padding:15px;
+	width:100%;
+	text-align:justify;
+	border-bottom:1px solid #999;
+}
+.article-page .articles li h3{
+	margin:5px 0 15px 0;
+}
+.article-page .articles li h3 a{
+	color:#000;
+	text-decoration:none;
+	font-size:22px;
+}
+.article-page .articles li h3 a:hover{
+	color:red;
+}
+.article-page .articles li p{
+	color:#333;
+	font-size:13px;
+	line-height:22px;
+}
+.article-page .articles li div{
+	color:#666;
+	width:100%;
+	padding:5px;
+	height:30px;
+	line-height:20px;
+	font-size:12px;
+}
+.article-page .articles li span.left{
+	float:left;
+	font-size:14px;
+}
+.article-page .articles li span.left a{
+	color:#096;
+}
+.article-page .articles li span.right{
+	float:right;
+	margin-left:15px;
+}
+.article-page .articles .clearfix a{
+	text-decoration:none;
+	color:#906;
+	cursor:pointer;
+}
+.article-page .articles .clearfix a:hover{
+	color:red;
+}
+.article-page .articles .pag{
+	text-align:center;
+}
+
+
+
+.detail-page .detail {
+	margin-top:10px;
+	padding:20px;
+	
+}
+.detail-page .detail h1{
+	width:100%;
+	font-size:24px;
+}
+.detail-page .detail h1 p{
+	margin-top:10px;
+	padding:5px;
+	color:#888;
+	font-size:15px;
+	height:20px;
+	line-height:20px;
+}
+.detail-page .detail p{
+	font-size:15px;
+	color:#333;
+	line-height:24px;
+}
+.post-info div{
+	padding:20px;
+	margin:20px 0;
+}
+.jump{
+	margin-top:50px;
+}
+.jump a{
+	color:#906;
+	background:#fff;
+}
+.jump a:hover{
+	color:red;
+	background:#fff;
+}
+.post-info div{
+	background:#cea;
+}
+
+
+

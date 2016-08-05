@@ -1,0 +1,71 @@
+
+<%- include header %>
+<div class="detail-page">
+
+    <div class="row">
+
+		<div class="col-md-3">
+			<div class="user-info">
+				<h2>
+					<span class="glyphicon glyphicon-leaf"></span>
+					<small>个人中心</small>
+				</h2>
+				
+				<% if(user){ %>
+					<p><span class="glyphicon glyphicon-user"></span> <%= user %></p>
+					<p><span class="glyphicon glyphicon-heart"></span> 前端开发工程师</p>
+					<p><span class="glyphicon glyphicon-book"></span> 发布手记：<%= totalPosts %>篇</p>
+				<% } %>
+			</div>
+		</div>
+		
+		<div class="col-md-9">
+			<div class="detail">
+				<h1 class="h1 text-center">
+					<%- posts[0].post.heading %>
+				    <p>标签：<%= posts[0].post.tags %></p>
+				</h1>
+				<hr/>
+				<p class="text-left"><%- posts[0].post.content %></p>
+				<hr/>
+			
+				<div class="jump">
+					<div class="row">
+						<% if((currentPage-1)*5+parseInt(currentIndex+1)>1 ){ %>
+							<div class="col-md-6 text-left">
+								<% if(currentIndex==="0") { %>
+									<a class="btn btn-default" href="/detail/<%= currentPage-1 %>/4">上一篇</a>
+								<% }else{ %>	
+									<a class="btn btn-default" href="/detail/<%= currentPage %>/<%= currentIndex-1 %>">上一篇</a>
+								<% } %>	
+							</div>  					
+						<% } %>
+						
+						<% if((currentPage-1)*5+parseInt(currentIndex+1)< totalPosts ){ %>
+							<div class="col-md-6 text-right">
+								<% if(currentIndex==="4") { %>
+									<a class="btn btn-default" href="/detail/<%= currentPage+1 %>/0">下一篇</a>
+								<% }else{ %>
+									<a class="btn btn-default" href="/detail/<%= currentPage %>/<%= currentIndex+1 %>">下一篇</a>
+								<% } %>	
+							</div>
+						<% } %>
+					</div>
+				</div>
+				
+				<div class="post-info">
+					<div> 
+						<p>作者：<%= user %></p>
+						<p>posted@<%= posts[0].post.date %></p>
+						<p>版权归属：我的手记 转载时请以链接形式注明出处</p>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>	
+	
+</div>	
+
+<%- include footer %> 

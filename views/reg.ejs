@@ -1,0 +1,59 @@
+<%- include header %>
+  <div id="reg">
+    <div class="panel panel-primary">
+        <div class="panel-body">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center">我的手记</h2>
+					<p class="text-center">多读书，读好书，丰富你的知识、经验和见解</p>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-12">
+					<form class="form-horizontal" method="post" role="form" name="regForm">
+					
+						<div class="form-group">
+							<label class="col-md-2 control-label">
+								用户名：
+							</label>
+							<div class="col-md-10">
+								<input type="text" class="form-control" name="username" placeholder="用户名限制为4~20位" >
+							    <p class="tip"></p>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-md-2 control-label">
+								密码：
+							</label>
+							<div class="col-md-10">
+								<input type="password" class="form-control" name="password" placeholder="只能是数字、字母、下划线">
+							    <p class="tip"></p>
+							</div>
+						</div>
+						
+						 <div class="form-group">
+							<label class="col-md-2 control-label">
+								确认密码：
+							</label>
+							<div class="col-md-10">
+								<input type="password" class="form-control" name="password-repeat" placeholder="只能是数字、字母、下划线">
+							    <p class="tip"></p>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="col-md-offset-2 col-md-10">
+								<button type="button" class="btn btn-primary btn-lg">注册</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+        </div>
+    </div>
+  </div>	
+
+  
+<%- include footer %>  		
+		
